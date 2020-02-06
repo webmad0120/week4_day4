@@ -1,0 +1,37 @@
+<div class="container">
+    <h1>La moda que mola en {{title}}</h1>
+    <hr>
+    <div class="row justify-content-around">
+        <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur numquam dolore quas? Dolores
+                illo
+                omnis dignissimos rerum voluptatum accusantium laborum unde, odit, ex dolore ab dicta, vel iure. Quam.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur numquam dolore quas? Dolores
+                illo
+                omnis dignissimos rerum voluptatum accusantium laborum unde, odit, ex dolore ab dicta, vel iure. Quam.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h3>Buscador de moda verano:</h3>
+            <hr>
+            <form action="/moda/buscar/temporada/verano" method="GET">
+                <div class="form-group">
+                    <label>Prenda</label>
+                    <input name="prenda" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Color</label>
+                    <input name="color" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Talla</label>
+                    <input name="talla" type="text" class="form-control">
+                    <small class="form-text text-muted">Tenemos de la XS a la XXXL.</small>
+                </div>
+                <button type="submit" class="btn btn-dark">Buscar</button>
+            </form>
+        </div>
+    </div>
+
+</div>

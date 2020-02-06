@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Buscador de moda de {{title}}</h1>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Tenemos lo que buscas</h3>
+            <p>Primero, <strong>mira la consola</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero consequatur numquam dolore quas? Dolores
+                illo
+                omnis dignissimos rerum voluptatum accusantium laborum unde, odit, ex dolore ab dicta, vel iure. Quam.
+            </p>
+            <a href="/moda" class="btn btn-dark">Volver al buscador</a>
+        </div>
+        <div class="col-md-6">
+            <p>Estás buscando una prenda para temporada <strong>{{URLparams.season}}</strong></p>
+            <p>Especificaciones:</p>
+            <ul>
+                {{#if queryString.prenda}}
+                <li>Prenda: {{queryString.prenda}}</li>
+                {{/if}}
+
+                {{#if queryString.color}}
+                <li>Color: {{queryString.color}}</li>
+                {{/if}}
+
+                {{#if queryString.talla}}
+                <li>Talla: {{queryString.talla}}</li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+</div>
