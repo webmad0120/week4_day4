@@ -18,7 +18,7 @@
 
 - Los Route Params & Query Strings permiten enviar información en una petición de tipo GET desde el navegador al servidor, a través de la URL.
   ````javascript
-  // URL: http://localhost:3000/endpoint/value1/value2?color=white&adults=no
+  // URL: http://localhost:3000/endpoint/value1/whatever/value2?color=white&adults=no
 
   router.get('/endpoint/:param1/whatever/:param2', (req, res) => {
 
