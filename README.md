@@ -8,9 +8,11 @@
 ## Main points: MVC
 
 - El Modelo Vista Controlador es un **patrón de diseño de software**:
-  * La petición del cliente (`GET` o `POST`) es captada por el controlador (ruta), que contiene el modelo.
+  * La petición del cliente (`GET` o `POST`) es captada por el controlador (ruta).
+  * El controlador hace uso del modelo para solicitar la información.
   * El modelo realiza la consulta a la BBDD.
-  * El modelo recoge la respuesta de la BBDD y la envía a la vista.
+  * El modelo recoge la respuesta de la BBDD y la envía al controlador.
+  * El controlador envía los datos a la vista.
   * La vista integra los datos previo a ser devuelta al navegador para ser renderizada.
   
   ![MVC](https://i.imgur.com/LUhoPkS.png)
